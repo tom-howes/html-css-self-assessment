@@ -3,107 +3,326 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Slay The Spire Characters</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Crimson+Pro:ital,wght@0,300;0,400;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <nav>
       <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle menu">
         <span></span><span></span><span></span>
       </button>
-
       <ul class="nav-links" id="navLinks">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#characters">Characters</a></li>
+        <li><a href="#box-model">Box Model</a></li>
+        <li><a href="#font-sizes">Font Sizes</a></li>
+        <li><a href="#positioning-demo">Positioning</a></li>
       </ul>
     </nav>
+
     <header>
       <h1>Slay The Spire Characters</h1>
     </header>
+
     <main>
-      <section class="characters">
+      <!-- CHARACTERS -->
+      <section class="characters" id="characters">
         <article class="character">
           <h2>Ironclad</h2>
-          <img src="images\Ironclad.webp" alt="Ironclad Headshot" />
+          <img src="images/Ironclad.webp" alt="Ironclad Headshot" />
           <div class="quote">
             "The remaining soldier of the Ironclads. Sold his soul to harness
             demonic energies."
           </div>
           <div class="description">
-            The Ironclad is one of four playable characters in Slay the Spire.
-            He wields an arsenal of powerful strikes, boasts formidable
-            defensive options, and draws fiendish strength from his demonic
-            benefactors to empower himself in various ways. He starts off with
-            80 HP, highest of the playable characters, and can manipulate
-            Exhaust.
+            The Ironclad wields powerful strikes, formidable defense, and draws
+            fiendish strength from demonic benefactors. He starts with 80 HP and
+            can manipulate the Exhaust mechanic.
           </div>
         </article>
-        <hr/>
+        <hr />
         <article class="character">
           <h2>Silent</h2>
-          <img src="images\Silent.webp" alt="Silent Headshot" />
+          <img src="images/Silent.webp" alt="Silent Headshot" />
           <div class="quote">
             "A deadly huntress from the foglands. Eradicates foes with daggers
             and poisons."
           </div>
           <div class="description">
-            The Silent is one of four playable characters in Slay the Spire. She
-            is a huntress themed on a rogue fantasy build. This cunning
-            character weakens her foes with numerous cuts and poison, while
-            using cheap tricks and agility to avoid their attacks. With many
-            powerful cards that draw and discard, the Silent ensures that she
-            will always be one step ahead of her enemy. She starts with a
-            relatively low 70 hp.
+            The Silent weakens foes with poison and cheap tricks while staying
+            one step ahead through draw and discard synergies. She starts with
+            70 HP.
           </div>
         </article>
-        <hr/>
-        <article class="character"></article>
+        <hr />
+        <article class="character">
           <h2>Defect</h2>
-          <img src="images\Defect.webp" alt="Defect Headshot" />
+          <img src="images/Defect.webp" alt="Defect Headshot" />
           <div class="quote">
-            "Combat automaton which became self-aware. Ancient technology allows manipulation of Orbs."
+            "Combat automaton which became self-aware. Ancient technology allows
+            manipulation of Orbs."
           </div>
           <div class="description">
-            The Defect is one of four playable characters in Slay the Spire. Once among the like of Orb Walkers and Bronze Automaton as one of many ancient automatons, it has since gained sentience and seeks its way out of the Spire. It attacks foes with a high-tech arsenal, array of Powers, and elemental evocations. The Defect has a unique mechanic, the Orbs. Using cards and Relics, The Defect Channels these elemental spheres into a set of Orb slots, activating their passive effects each turn or Evoking them for a one-time burst. The Defect starts with three Orb slots, though cards and relics can add or consume them. It starts with 75 hp.
+            The Defect channels elemental Orbs into slots that trigger passive
+            effects each turn or can be Evoked for burst damage. Starts with 75
+            HP.
           </div>
         </article>
-        <hr/>
-      <article class="character"></article>
+        <hr />
+        <article class="character">
           <h2>Watcher</h2>
-          <img src="images\Watcher.webp" alt="Watcher Headshot" />
+          <img src="images/Watcher.webp" alt="Watcher Headshot" />
           <div class="quote">
-            "A blind ascetic who has come to "Evaluate" the Spire. Master of the divine Stances."
+            "A blind ascetic who has come to 'Evaluate' the Spire. Master of the
+            divine Stances."
           </div>
           <div class="description">
-            The Watcher is one of four playable characters in Slay the Spire. She is a monk that utilizes the effects of her different stances to her advantage, boasts an arsenal oriented around deck control via scrying, Icon Retain retain, and Energy generation, as well as a unique focus on mid-combat card generation. She starts with 72 HP.           </div>
+            The Watcher shifts between Calm, Wrath, and Divinity stances to
+            multiply damage and generate energy. She starts with 72 HP and
+            excels at deck control via Scry.
+          </div>
         </article>
-        <hr/>
+        <hr />
       </section>
-      <section class="HTML Info"></section>
-      <h3>Most Useful Tags</h3>
+
+      <!-- HTML INFO -->
+      <section class="html-info" id="html-info">
+        <h3>Most Useful Tags</h3>
         <ul>
-          <li>div</li>
-          <li>h1-h6</li>
-          <li>body</li>
-          <li>img</li>
-          <li>section</li>
-          <li>article</li>
-          <li>ul</li>
-          <li>nav</li>
-          <li>header</li>
-          <li>footer</li>
-      </ul>
-      <h3>Header Tags for SEO</h3>
-      <div>H1 -> H2 -> H3 Sequential order (no skipping)</div>
+          <li>&lt;div&gt;</li>
+          <li>&lt;h1&gt;–&lt;h6&gt;</li>
+          <li>&lt;body&gt;</li>
+          <li>&lt;img&gt;</li>
+          <li>&lt;section&gt;</li>
+          <li>&lt;article&gt;</li>
+          <li>&lt;ul&gt;</li>
+          <li>&lt;nav&gt;</li>
+          <li>&lt;header&gt;</li>
+          <li>&lt;footer&gt;</li>
+        </ul>
+        <div class="seo-rule">
+          H1 → H2 → H3 — always sequential, no skipping levels.
+        </div>
       </section>
-      <h3>3x3 Grid</h3>
-      <div class="grid">
-        <div><span>1</span> <span>2</span> <span>3</span></div>
-        <div><span>4</span> <span>5</span> <span>6</span></div>
-        <div><span>7</span> <span>8</span> <span>9</span></div>
-      </div>
+
+      <!-- 3x3 GRID -->
+      <section class="grid-section" id="grid">
+        <h3>3×3 Grid</h3>
+        <div class="grid">
+          <div><span>1</span><span>2</span><span>3</span></div>
+          <div><span>4</span><span>5</span><span>6</span></div>
+          <div><span>7</span><span>8</span><span>9</span></div>
+        </div>
+      </section>
+
+      <!-- ① BOX MODEL GALLERY -->
+      <section id="box-model">
+        <h3>Box Model Gallery</h3>
+        <p class="intro">
+          Each row varies one property (border / margin / padding) across three
+          values: <strong>0px, mid, large</strong>.
+        </p>
+
+        <div class="box-gallery">
+          <div class="box-row-label">
+            Row 1 — Border: 0px &nbsp;|&nbsp; 3px solid &nbsp;|&nbsp; 8px dashed
+          </div>
+          <div class="box box-r1c1">
+            <span class="label">Border: 0px</span>
+            <span class="val">No border at all</span>
+            <span class="note">margin: 5px · padding: 10px</span>
+          </div>
+          <div class="box box-r1c2">
+            <span class="label">Border: 3px solid</span>
+            <span class="val">Thin solid line</span>
+            <span class="note">margin: 5px · padding: 10px</span>
+          </div>
+          <div class="box box-r1c3">
+            <span class="label">Border: 8px dashed</span>
+            <span class="val">Thick dashed line</span>
+            <span class="note">margin: 5px · padding: 10px</span>
+          </div>
+
+          <div class="box-row-label">
+            Row 2 — Margin: 0px &nbsp;|&nbsp; 10px &nbsp;|&nbsp; 24px (dashed
+            outline = margin edge)
+          </div>
+          <div class="box box-r2c1">
+            <span class="label">Margin: 0px</span>
+            <span class="val">Flush to grid cell</span>
+            <span class="note">border: 2px solid · padding: 10px</span>
+          </div>
+          <div class="box box-r2c2">
+            <span class="label">Margin: 10px</span>
+            <span class="val">Small gap around box</span>
+            <span class="note">border: 2px solid · padding: 10px</span>
+          </div>
+          <div class="box box-r2c3">
+            <span class="label">Margin: 24px</span>
+            <span class="val">Large gap around box</span>
+            <span class="note">border: 2px solid · padding: 10px</span>
+          </div>
+
+          <div class="box-row-label">
+            Row 3 — Padding: 0px &nbsp;|&nbsp; 12px &nbsp;|&nbsp; 28px
+          </div>
+          <div class="box box-r3c1">
+            <span class="label">Padding: 0px</span>
+            <span class="val">Content touches border</span>
+            <span class="note">border: 2px teal · margin: 5px</span>
+          </div>
+          <div class="box box-r3c2">
+            <span class="label">Padding: 12px</span>
+            <span class="val">Comfortable breathing room</span>
+            <span class="note">border: 2px teal · margin: 5px</span>
+          </div>
+          <div class="box box-r3c3">
+            <span class="label">Padding: 28px</span>
+            <span class="val">Lots of inner space</span>
+            <span class="note">border: 2px teal · margin: 5px</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ② FONT SIZE LIST — font-size kept inline per assignment requirement -->
+      <section id="font-sizes">
+        <h3>Font Sizes — Absolute &amp; Relative Units</h3>
+        <ul>
+          <li>
+            <span style="font-size: 10px">The Spire awaits.</span>
+            <span class="unit-label">10px (absolute)</span>
+            <span class="unit-note"
+              >Use px for fine UI details like borders or icon labels where
+              pixel-perfect control is needed, e.g. a caption under a
+              thumbnail.</span
+            >
+          </li>
+          <li>
+            <span style="font-size: 12pt">The Spire awaits.</span>
+            <span class="unit-label">12pt (absolute)</span>
+            <span class="unit-note"
+              >Points are a print unit (1pt = 1/72 inch). Use pt inside @media
+              print stylesheets, e.g. setting body to 12pt for a printable
+              document.</span
+            >
+          </li>
+          <li>
+            <span style="font-size: 1rem">The Spire awaits.</span>
+            <span class="unit-label">1rem (relative to root)</span>
+            <span class="unit-note"
+              >rem scales with the root font-size. Use for body text so the
+              whole page scales consistently when a user changes their browser
+              default font size.</span
+            >
+          </li>
+          <li>
+            <span style="font-size: 1.5em">The Spire awaits.</span>
+            <span class="unit-label">1.5em (relative to parent)</span>
+            <span class="unit-note"
+              >em multiplies the parent element's font-size. Use for icons or
+              labels that should always be proportional to the surrounding
+              text.</span
+            >
+          </li>
+          <li>
+            <span style="font-size: 4vw">The Spire awaits.</span>
+            <span class="unit-label">4vw (relative to viewport)</span>
+            <span class="unit-note"
+              >vw scales with viewport width. Use for hero headings that should
+              fill the screen proportionally on any device without
+              overflowing.</span
+            >
+          </li>
+          <li>
+            <span style="font-size: 150%">The Spire awaits.</span>
+            <span class="unit-label">150% (relative to parent)</span>
+            <span class="unit-note"
+              >% works like em for font-size. Use inside a component to bump a
+              sub-heading up 50% from whatever the container's base size
+              is.</span
+            >
+          </li>
+        </ul>
+      </section>
+
+      <!-- ③ POSITIONING DEMO -->
+      <section id="positioning-demo">
+        <h3>CSS Positioning — 4 Types</h3>
+        <p class="pos-intro">
+          The arena below uses <code>position: relative</code> as a containing
+          block. The footer at the bottom of the screen uses
+          <code>position: fixed</code>.
+        </p>
+
+        <div class="pos-arena" id="arena">
+          <div class="pos-box pos-static">
+            position: static
+            <span class="sub"> — Default flow. No offset properties.</span>
+          </div>
+          <div class="pos-box pos-relative">
+            position: relative
+            <span class="sub">
+              — top:10px left:30px from its own normal position.</span
+            >
+          </div>
+          <div class="pos-box pos-absolute">
+            position: absolute
+            <span class="sub">
+              — bottom:16px right:16px of nearest positioned ancestor.</span
+            >
+          </div>
+        </div>
+
+        <div class="pos-labels">
+          <div class="pos-card">
+            <h4>static</h4>
+            <p>
+              The default. Elements stack in document flow. Offset properties
+              (top/left etc.) have no effect. Use it to <em>reset</em> a
+              positioned element back to normal flow.
+            </p>
+          </div>
+          <div class="pos-card">
+            <h4>relative</h4>
+            <p>
+              Stays in document flow but can be nudged with offsets. Also
+              creates a new containing block for absolute children. Use for
+              slight visual tweaks or as a wrapper.
+            </p>
+          </div>
+          <div class="pos-card">
+            <h4>absolute</h4>
+            <p>
+              Removed from flow; positioned relative to the nearest
+              <em>positioned</em> ancestor. Use for tooltips, badges, dropdown
+              menus, or decorative overlays inside a container.
+            </p>
+          </div>
+          <div class="pos-card">
+            <h4>fixed (used by footer)</h4>
+            <p>
+              Removed from flow; positioned relative to the
+              <em>viewport</em> and stays put while the page scrolls. Use for
+              persistent navbars, cookie banners, or a sticky footer.
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer>Made by Tom for the STS Enthusiasts</footer>
+
+    <footer>
+      Made by Tom for the STS Enthusiasts &nbsp;·&nbsp; position: fixed keeps
+      this here always
+    </footer>
+
+    <script>
+      function toggleMenu() {
+        const nav = document.getElementById("navLinks");
+        nav.style.display = nav.style.display === "none" ? "flex" : "none";
+      }
+    </script>
   </body>
 </html>
